@@ -20,3 +20,11 @@ The Task Manager application has a bug in its task deletion feature. When a task
 4. Try to delete the task with ID 3.
 
 The application fails or shows incorrect results in steps 3 or 4.
+
+## Acceptance Criteria
+
+- After fixing the bug, deleting any valid task ID must succeed without errors.
+- Remaining tasks must retain their correct original IDs.
+- `list_tasks()` must accurately reflect the current state after one or more deletions.
+- The application must handle multiple sequential deletions correctly.
+- All existing tests related to task creation, listing, and deletion must pass after the fix.
