@@ -1,0 +1,13 @@
+author_name = "Your Name"
+author_email = "your.email@example.com"
+
+difficulty = "medium"
+category = "bugfix"
+
+# Timeouts (seconds)
+timeout = 120
+build_timeout = 60
+
+# Resource limits
+memory_limit_mb = 1024
+cpu_limit = 2.0
