@@ -3,3 +3,11 @@
 ## Bug Description
 
 The Task Manager application has a bug in its task deletion feature. When a task is deleted by its ID, the internal list handling causes subsequent operations (such as listing remaining tasks or deleting another task) to fail or behave incorrectly.
+
+## Expected Behavior
+
+- Deleting a task by its valid ID should permanently remove it from the list.
+- Remaining tasks should keep their original IDs unchanged.
+- The `list_tasks()` method should correctly show all remaining tasks after any number of deletions.
+- Multiple deletions in sequence should work without errors or crashes.
+- No IndexError or ID lookup failures should occur after deletions.
