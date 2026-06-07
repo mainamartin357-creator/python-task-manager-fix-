@@ -11,3 +11,12 @@ The Task Manager application has a bug in its task deletion feature. When a task
 - The `list_tasks()` method should correctly show all remaining tasks after any number of deletions.
 - Multiple deletions in sequence should work without errors or crashes.
 - No IndexError or ID lookup failures should occur after deletions.
+
+## Steps to Reproduce
+
+1. Create three tasks with IDs 1, 2, and 3.
+2. Delete the task with ID 2.
+3. Attempt to list all remaining tasks.
+4. Try to delete the task with ID 3.
+
+The application fails or shows incorrect results in steps 3 or 4.
